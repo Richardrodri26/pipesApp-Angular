@@ -8,13 +8,13 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 
 // Configuración del locale de la app
-import localeEsHN from '@angular/common/locales/es-HN';
+import localeEsCo from '@angular/common/locales/es-CO';
 import localeFrCA from '@angular/common/locales/fr-CA';
 
 import { registerLocaleData } from '@angular/common';
 
 
-registerLocaleData( localeEsHN );
+registerLocaleData( localeEsCo );
 registerLocaleData( localeFrCA );
 
 
@@ -30,7 +30,7 @@ registerLocaleData( localeFrCA );
     SharedModule,
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'es-HN' }
+    { provide: LOCALE_ID, useValue: 'es-CO' }
   ],
   bootstrap: [AppComponent]
 })
